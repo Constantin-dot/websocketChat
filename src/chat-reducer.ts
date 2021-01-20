@@ -20,6 +20,9 @@ export const chatReducer = (state: any = initialState, action: any) => {
             return {...state, typingUsers: [...state.typingUsers
                     .filter((u: any) => u.id !== action.user.id), action.user]}
         }
+        case "delete-all-messages": {
+            return {...state, messages: []}
+        }
         default:
             return state
     }
@@ -28,6 +31,7 @@ export const chatReducer = (state: any = initialState, action: any) => {
 const messagesReceived = (messages: any) => ({type: "messages-received", messages})
 const newMessageReceived = (message: any) => ({type: "new-message-received", message})
 const addTypingUser = (user: any) => ({type: "add-typing-user", user})
+export const deleteAllMessages = () => ({type: "delete-all-messages"})
 
 export const createConnection = () => (dispatch: any) => {
     api.createConnection()

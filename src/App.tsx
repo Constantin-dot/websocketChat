@@ -1,7 +1,14 @@
 import React, {useEffect, useRef, useState} from 'react';
 import styles from './App.module.css';
 import {useDispatch, useSelector} from "react-redux";
-import {createConnection, destroyConnection, sendMessage, setClientName, typeMessage} from "./chat-reducer";
+import {
+    createConnection,
+    deleteAllMessages,
+    destroyConnection,
+    sendMessage,
+    setClientName,
+    typeMessage
+} from "./chat-reducer";
 import {AppStateType} from "./index";
 
 const App: React.FC = () => {
@@ -88,6 +95,13 @@ const App: React.FC = () => {
                             setMessage("")
                         }}>
                         Send
+                    </button>
+                    <button
+                        className={styles.button2}
+                        onClick={() => {
+                            dispatch(deleteAllMessages())
+                        }}>
+                        Delete all messages
                     </button>
                 </div>
             </div>

@@ -3,8 +3,8 @@ import io from "socket.io-client";
 export const api = {
     socket: null as null | SocketIOClient.Socket,
     createConnection() {
-        // this.socket = io("http://localhost:3009")
-        this.socket = io("https://konstantin-websocket-chat-back.herokuapp.com")
+        this.socket = io("http://localhost:3009")
+        // this.socket = io("https://konstantin-websocket-chat-back.herokuapp.com")
     },
     subscribe(initMessagesHandler: (messages: any, fn: () => void) => void,
               newMessagesSentHandler: (message: any) => void,
