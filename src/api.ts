@@ -3,10 +3,10 @@ import io from "socket.io-client";
 export const api = {
     socket: null as null | SocketIOClient.Socket,
     createConnection() {
-        this.socket = io("http://localhost:3009")
-        // this.socket = io("https://konstantin-websocket-chat-back.herokuapp.com")
+        // this.socket = io("http://localhost:3009")
+        this.socket = io("https://konstantin-websocket-chat-back.herokuapp.com")
     },
-    subscribe(initMessagesHandler: (messages: any) => void,
+    subscribe(initMessagesHandler: (messages: any, fn: () => void) => void,
               newMessagesSentHandler: (message: any) => void,
               userTypingHandler: (user: any) => void) {
         this.socket?.on('init-messages-published', initMessagesHandler)
@@ -21,7 +21,9 @@ export const api = {
         this.socket?.emit('client-name-sent', name)
     },
     sendMessage(message: string){
-        this.socket?.emit('client-message-sent', message)
+        this.socket?.emit('client-message-sent', message, (error: string | null) => {
+            if(error) alert(error)
+        })
     },
     typeMessage() {
         this.socket?.emit('client-typed')

@@ -1,11 +1,52 @@
 .App {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.nameBlock {
+    width: 550px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted #ff079a;
+    border-radius: 33px;
+    padding: 10px;
+}
+
+.input {
+    border-radius: 5px;
+    border: 2px solid dodgerblue;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+.button1 {
+    border-radius: 5px;
+    border: 2px solid dodgerblue;
+    margin: 20px;
+    width: 70px;
+    height: 54px;
+    background-color: lightblue;
+}
+
+.chatBlock {
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted #ff079a;
+    border-radius: 33px;
+    padding: 10px;
 }
 
 .messages {
-    border-radius: 5%;
-    border: 1px solid black;
+    /*border-radius: 5%;*/
+    /*border: 1px solid black;*/
     padding: 10px;
     height: 300px;
     overflow-y: scroll;
@@ -13,10 +54,34 @@
     margin: 20px
 }
 
-.elem {
-    border-radius: 5%;
-    border: 1px solid black;
+.message {
+    width: 90%;
+    border-radius: 5px;
+    border: 2px dotted dodgerblue;
     padding: 10px;
-    margin: 20px
+    margin: 5px;
+}
+
+.enterMessageBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem {
+    border-radius: 5px;
+    border: 2px solid dodgerblue;
+    padding: 10px;
+    min-height: 150px;
+}
+
+.button2 {
+    border-radius: 5px;
+    border: 2px solid dodgerblue;
+    margin: 20px;
+    width: 100%;
+    height: 54px;
+    background-color: lightblue;
 }
 
