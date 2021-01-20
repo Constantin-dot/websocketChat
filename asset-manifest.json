@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/websocketChat/static/css/main.e99d885a.chunk.css",
-    "main.js": "/websocketChat/static/js/main.f0127683.chunk.js",
-    "main.js.map": "/websocketChat/static/js/main.f0127683.chunk.js.map",
+    "main.css": "/websocketChat/static/css/main.846fbd61.chunk.css",
+    "main.js": "/websocketChat/static/js/main.0ece1d52.chunk.js",
+    "main.js.map": "/websocketChat/static/js/main.0ece1d52.chunk.js.map",
     "runtime-main.js": "/websocketChat/static/js/runtime-main.8817cb15.js",
     "runtime-main.js.map": "/websocketChat/static/js/runtime-main.8817cb15.js.map",
     "static/js/2.dad69297.chunk.js": "/websocketChat/static/js/2.dad69297.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.6fb9f254.chunk.js": "/websocketChat/static/js/3.6fb9f254.chunk.js",
     "static/js/3.6fb9f254.chunk.js.map": "/websocketChat/static/js/3.6fb9f254.chunk.js.map",
     "index.html": "/websocketChat/index.html",
-    "static/css/main.e99d885a.chunk.css.map": "/websocketChat/static/css/main.e99d885a.chunk.css.map",
+    "static/css/main.846fbd61.chunk.css.map": "/websocketChat/static/css/main.846fbd61.chunk.css.map",
     "static/js/2.dad69297.chunk.js.LICENSE.txt": "/websocketChat/static/js/2.dad69297.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8817cb15.js",
     "static/js/2.dad69297.chunk.js",
-    "static/css/main.e99d885a.chunk.css",
-    "static/js/main.f0127683.chunk.js"
+    "static/css/main.846fbd61.chunk.css",
+    "static/js/main.0ece1d52.chunk.js"
   ]
 }
