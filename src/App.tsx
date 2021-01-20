@@ -2,8 +2,8 @@ import React, {useEffect, useRef, useState} from 'react';
 import styles from './App.module.css';
 import {useDispatch, useSelector} from "react-redux";
 import {
+    clientDeleteAllMessages,
     createConnection,
-    deleteAllMessages,
     destroyConnection,
     sendMessage,
     setClientName,
@@ -99,7 +99,7 @@ const App: React.FC = () => {
                     <button
                         className={styles.button2}
                         onClick={() => {
-                            dispatch(deleteAllMessages())
+                            dispatch(clientDeleteAllMessages())
                         }}>
                         Delete all messages
                     </button>
